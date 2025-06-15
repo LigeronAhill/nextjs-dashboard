@@ -1,6 +1,10 @@
 {
   "private": true,
+  "type-check": "tsc -b",
   "scripts": {
+    "format": "prettier --write .",
+    "lint:fix": "next lint --fix",
+    "lint": "next lint",
     "build": "next build",
     "dev": "next dev --turbopack",
     "start": "next start"
@@ -27,7 +31,17 @@
     "@types/bcrypt": "^5.0.2",
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
-    "@types/react-dom": "19.0.3"
+    "@types/react-dom": "19.0.3",
+    "@typescript-eslint/parser": "^8.34.0",
+    "eslint-config-next": "^15.3.3",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
